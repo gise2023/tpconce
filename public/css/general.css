@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    
+}

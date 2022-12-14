@@ -1,0 +1,67 @@
+.home{
+    background-color: var(--grisClaro);
+    font-family: var(--tipografiaGeneral);
+}
+
+.home__main img{
+    width: 100%;
+}
+
+.home__main h2{
+    font-size: var(--titulares);
+    margin: 20px;
+}
+
+.home__main__section__article img{
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.home__main__section__article div{
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.home__main__section__article div p{
+   margin-top: 20px;
+}
+
+.precio{
+    font-size: var(--precio);
+}
+
+.descuento{
+    font-size: var(--descuentos);    
+}
+
+.descripcion{
+    font-size: var(--descripciones);
+    font-weight: bold;
+}
+
+.home__footer{
+    background-color: #ffffff;
+    margin: 10px;
+    text-align: center;
+}
+
+.home__footer__ul li{
+    margin-top: 40px;
+    list-style: none;    
+    text-decoration: none;
+}
+
+.home__footer__ul li i{
+    color: var(--celeste);
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    font-weight: bold;
+}
