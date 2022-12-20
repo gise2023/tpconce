@@ -2,6 +2,11 @@
     margin: 0px;
 }
 
+body{
+    font-family: var(--tipografiaGeneral);
+    background-color: var(--grisClaro);
+}
+
 a{
     color: #000000;
     text-decoration: none;

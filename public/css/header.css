@@ -1,5 +1,6 @@
 .header{
     background-color: var(--amarillo);
+    padding: 10px;
 }
 
 .header--img{   
@@ -39,10 +40,12 @@
 .header__nav ul{
     margin-top: 20px;
     padding:0px;
+    display: none;
 }
 
  .header__nav__div{ 
     text-align: center;
+    display: block;
  }
 
 #burger{
@@ -52,4 +55,24 @@
     margin-top:20px;
     margin-bottom: 20px;
     padding: 10px;   
+}
+
+@media (min-width:361px){
+    .header__nav ul{
+        display: block;
+     }
+     
+     .header__nav__div{ 
+        display: none;
+     }
+}
+
+@media (min-width:769px){
+    .header__nav ul{
+        display: block;
+     }
+     
+     .header__nav__div{ 
+        display: none;
+     }
 }
