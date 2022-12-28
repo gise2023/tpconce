@@ -2,13 +2,17 @@
     
 }
 
+.home__section{
+    width: 100%;
+}
+
+.home__section img{
+    width: 100%;
+}
+
 .home__main{
     width: 90%;
     margin: 0 auto;
-}
-
-.home__main img{
-    width: 100%;
 }
 
 .home__main h2{
@@ -16,10 +20,15 @@
     margin: 20px;
 }
 
+.home__main__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .home__main__section__article{
     background-color: #ffffff;
-    width: 90%;
-    margin-left: 20px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -27,26 +36,45 @@
     margin-bottom: 0px;
 }
 
+
+.home__main__section__article img{
+    width: 100%;
+}
+
 .home__main__section__article div{
+    width: 100%;
     border-top: 1px solid var(--grisClaro);
-    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home__main__section__article div i{
-    border-radius: 50%;
-    border: 1px solid var(--verde);
-    color: var(--verde);
+    display: block;
+    font-size:var(--descuentos);
     padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--verde);
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 .precio{
-    font-size: var(--precio);
+    width: 30%;
+    font-size: 13px;
     color: var(--grisOscuro);
 }
 
 .descuento{
-    font-size: var(--descuentos);  
-    color: var(--verde);  
+    width: 70%;
+    font-size: 11px;  
+    color: var(--verde);
+    padding-left: 10px;
 }
 
 .descripcion{
@@ -87,6 +115,19 @@
     .home__main__section__article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    
+    .home__main__section__article{
+        width: 48%;
+    }
+
+    .home__main__section__article:nth-child(3){
+        margin-bottom: 0px;
+    }
+
+    .home__main__section__article:nth-child(4){
+        margin-bottom: 0px;
+    }
+    
     .descripcion{
        display: block ;
     }
@@ -96,6 +137,15 @@
     .home__main__section__article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .home__main__section__article{
+        width: 24%;
+    }
+
+    .home__main__section__article{
+        margin-bottom: 0px;
+    }
+    
     .descripcion{
         display: block ;
      }

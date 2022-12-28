@@ -1,5 +1,8 @@
 *{
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: url(/images/cursor.cur), auto;
 }
 
 body{

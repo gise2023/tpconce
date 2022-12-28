@@ -1,39 +1,60 @@
 .header{
     background-color: var(--amarillo);
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px 0;
 }
 
-.header--img{   
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 20px; 
+.header__div{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+   }
+
+.header__logo{   
+    width: 50%;
 }
 
-#search{
-    border: solid ;
-    background-color:white;
-    font-size: var(--tipografiaTamaño);
-    color: var(--grisOscuro); 
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 3px;
-    padding-right: 10px;
+.header__logo img{   
+    width: 90%;
+}
+.header__buscador{
+    width: 50%;
+}
+.header__buscador--box{
+    position: relative;
 }
 
-#lupa{
-    border: solid;
-    background-color: var(--grisClaro);
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 3px;
+.header__buscador--box input{
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
 }
 
-.header--h2{
+.header__buscador--box button{
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    border: none;
+    background-color: white;
+    border-left: 1px solid var(--grisOscuro);
+    color: var(--grisOscuro);
+}
+
+.header__titulo{
     text-align: center;
     margin-top: 20px; 
 }
 
+.header__titulo--p{
+    width:100%;
+}
+
 .header__nav{
+    width: 100%;
     margin-left: 0px;
  }
  
@@ -43,36 +64,113 @@
     display: none;
 }
 
- .header__nav__div{ 
-    text-align: center;
-    display: block;
- }
-
-#burger{
-    border-radius: 10%;
-    background-color: var(--celeste);
-    color: white;
-    margin-top:20px;
-    margin-bottom: 20px;
-    padding: 10px;   
+.header__nav ul li{
+    font-size: 10px;
+    list-style: none;
 }
 
+ .header_hamburguesa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .header_hamburguesa button{
+    background-color: var(--celeste);
+    border:none;
+    color: white;
+    border-radius: 5px;
+    width: 40px; 
+    height: 40px;
+    font-size: 24px;
+}
+
+
 @media (min-width:361px){
-    .header__nav ul{
-        display: block;
-     }
-     
-     .header__nav__div{ 
+
+    .header__div {
+        justify-content: space-around;
+    } 
+    
+    .header__logo{  
+        width: 30%; 
+        padding-top: 40px;  
+    }
+    
+    .header__buscador{
+        width: 30%; 
+        padding-top: 40px;
+    }
+    
+    .header__buscador--box input{
+        padding: 10px 15px;
+    }
+    
+    .header__buscador--box button{
+        border: 1px solid var(--grisOscuro);
+        right: -18px;
+    }
+        
+    .header__titulo{
+        width: 30%;
+        margin-left: 20px; 
+        padding-top: 20px;
+        font-size: 10px;
+    }
+        
+    .header__nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }    
+
+    .header__nav ul{    
+        display: flex; 
+        gap: 10px;
+    }
+
+     .header_hamburguesa{ 
         display: none;
      }
 }
 
 @media (min-width:769px){
-    .header__nav ul{
-        display: block;
-     }
+           
+    .header__logo{   
+        width: 30%;
+    }
+    
+    .header__buscador{
+        width: 30%;
+    }
+    
+    .header__buscador--box button{
+        right: -18px;
+    }
+        
+    .header__titulo{
+        width: 30%;
+        font-size: 18px;
+    }
      
-     .header__nav__div{ 
+    .header__nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }    
+
+    .header__nav ul{    
+        display: flex; 
+        gap: 10px;
+    }
+      
+    .header__nav ul li{
+        font-size: 18px;
+    }
+
+     .header_hamburguesa{ 
         display: none;
      }
 }

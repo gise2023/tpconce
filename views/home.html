@@ -10,40 +10,56 @@
 </head>
 <body class="home">
     <header class="header">
-        <img class="header--img" width="200" src="/images/logo-mercado-liebre.svg">
-        <br>
-        <span id="search" >Buscar productos, marcas  </span>
-        <br>
-        <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
-        <h2 class="header--h2"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
-        <nav class="header__nav">
+        <div class="header__logo">
+            <img class="header__logo--img" src="/images/logo-mercado-liebre.svg">
+        </div>
+        <div class="header__buscador">
+            <form action="">
+                <div class="header__buscador--box">
+                    <input type="text" placeholder="Buscar productos, marcas"/>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>   
+        </div> 
+        <div class="header__titulo">
+             <p class="header__titulo--p"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="header__nav">            
             <ul>
                 <li><a href="/ofertas">Ofertas</a></li>
                 <li><a href="/tiendasOficiales">Tienda Oficiales</a></li>
                 <li><a href="/vender">Vender</a></li>
                 <li><a href="/ayuda">Ayuda</a></li>
-            </ul>
+            </ul>            
             <ul>     
                 <li><a href="/crearCuenta">Crear Cuenta</a><i class="fa-regular fa-id-card"></i></li>
                 <li><a href="/ingresa">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="/misCuentas">Mis cuentas</a><i class="fa-sharp fa-solid fa-basket-shopping"></i></li>
-            </ul>
-            <div class="header__nav__div"><i id="burger" class="fa-solid fa-bars"></i></div>
-        </nav>
+            </ul>            
+        </nav> 
+        <div class="header_hamburguesa">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>             
     </header>
-    <main class="home__main">
+    <section class="home__section">
         <img src="/images/img-home-banner.jpg">
+    </section>
+    <main class="home__main">
         <h2>Basado en tu última visita</h2>
         <section class="home__main__section">
             <article class="home__main__section__article">
                 <img src="/images/img-cafetera-moulinex.jpg">
                 <div>
-                    <i class="fa-solid fa-truck-fast"></i>
+                    <i class="fa-solid fa-truck-fast"></i>  
                     <p class="precio">
                         $6.770
                     </p>
                     <p class="descuento">
-                        40% OFF
+                        40% off
                     </p>
                     <p class="descripcion">
                         Cafetera Moulinex
@@ -106,7 +122,7 @@
                         $6.770
                     </p>
                     <p class="descuento">
-                        40% OFF
+                        40% off
                     </p>
                     <p class="descripcion">
                         Cafetera Moulinex
