@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0b63215334.js" crossorigin="anonymous"></script>
+    <link href="/css/styles.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body class="home">
+    <header class="header">
+        <div class="header__logo">
+            <a href="/"><img class="header__logo--img" src="/images/logo-mercado-liebre.svg"></a>
+        </div>
+        <div class="header__buscador">
+            <form action="">
+                <div class="header__buscador--box">
+                    <input type="text" placeholder="Buscar productos, marcas"/>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>   
+        </div> 
+        <div class="header__titulo">
+             <p class="header__titulo--p"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="header__nav">            
+            <ul>
+                <li><a href="/ofertas">Ofertas</a></li>
+                <li><a href="/tiendasOficiales">Tienda Oficiales</a></li>
+                <li><a href="/vender">Vender</a></li>
+                <li><a href="/ayuda">Ayuda</a></li>
+            </ul>            
+            <ul>     
+                <li><a href="/register">Crear Cuenta</a><i class="fa-regular fa-id-card"></i></li>
+                <li><a href="/login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="/misCuentas">Mis cuentas</a><i class="fa-sharp fa-solid fa-basket-shopping"></i></li>
+            </ul>            
+        </nav> 
+        <div class="header_hamburguesa">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>             
+    </header>
+    <main class="home__main">
+        <form class="form" action="">
+            <div class="form--deco">
+                <div class="form__box">
+                    <input type="text"  id="name" name="name" autocomplete="off" placeholder="Nombre y apellido">
+                </div>
+                <div class="form__box">
+                    <input type="text" minlength="2" id="username" name="username" autocomplete="off" placeholder="Nombre de usuario">
+                    <div class="usermsg2">
+                        <small>Gracias, vuelva pronto... o intente con un usuario de dos o más letras.</small>
+                    </div>
+                </div>
+                <div class="form__box">
+                    <div class="form__box--titulo">
+                        <label for="date">Fecha de nacimiento</label>
+                    </div>                
+                    <input type="date" id="date" name="date" autocomplete="off">
+                </div>
+                <div class="form__box">
+                    <div class="form__box--titulo">
+                        <label  for="perfil">Perfil de usuario</label>
+                    </div>                
+                    <div class="form__box__perfil">  
+                        <small><input type="radio" id="comprador" name="perfil"> </small> 
+                        <small><label for="comprador">Comprador</label> </small>                   
+                        <small><input type="radio" id="vendedor" name="perfil">  </small>
+                        <small><label for="vendedor">Vendedor</label> </small>     
+                    </div> 
+                </div>
+                <div class="form__box">
+                    <div class="register__box--titulo">
+                        <label for="intereses">Intereses</label>
+                    </div> 
+                    <div class="form__box__intereses">
+                        <div>
+                            <small><input type="checkbox" id="electro" name="intereses"></small>
+                            <small><label for="electro">Electro</label></small>
+                        </div>
+                        <div>
+                            <small><input type="checkbox" id="moda" name="intereses"></small> 
+                            <small><label for="moda">Moda</label></small> 
+                        </div>
+                        <div>
+                            <small><input type="checkbox" id="hogar" name="intereses"></small>
+                            <small><label for="hogar">Hogar</label></small>
+                        </div>     
+                        <div>
+                            <small><input type="checkbox" id="jugueteria" name="intereses"> </small> 
+                            <small><label for="jugueteria">Juguetería</label> </small> 
+                        </div>
+                        <div>
+                            <small><input type="checkbox" id="vidaSana" name="intereses">  </small> 
+                            <small><label for="vidaSana">Vida Sana</label> </small>
+                        </div>                
+                    </div> 
+                </div>
+                <div class="form__box">
+                    <input type="password" minlength="4" id="password" name="password" autocomplete="off" placeholder="Elegí tu contraseña">
+                    <div class="usermsg2">
+                        <small>Error... intente con una contraseña de cuatro o más letras.</small>
+                    </div>
+                </div>
+                <div class="form__box">
+                    <input type="password" minlength="4" id="password2" name="password2" autocomplete="off" placeholder="Confirmá tu contraseña">
+                    <div class="usermsg2">
+                        <small>Error... intente con una contraseña de cuatro o más letras.</small>
+                    </div>
+                </div>
+                <div class="form__box__button">
+                    <button type="submit"><a  href="/" class="a">Enviar</a></button>
+                    <button class="cancelar" type="reset">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="home__footer">
+        <ul class="home__footer__ul">
+            <li>
+                <i class="fa-solid fa-credit-card"></i>
+                <p class="titulo">Pagá con tarjeta o en efectivo</p>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-gift"></i>
+                <p class="titulo">Envío gratis desde $ 2.500</p>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            </li>
+            <li>
+                <i class="fa-solid fa-user-shield"></i>
+                <p class="titulo">Seguridad, de principio a fin</p>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p> 
+            </li>
+            <li>
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

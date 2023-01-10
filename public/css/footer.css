@@ -1,0 +1,25 @@
+.home__footer{
+    background-color: #ffffff;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.home__footer__ul{
+    padding-inline-start: 0%;
+}
+
+.home__footer__ul li{
+    
+    list-style: none;    
+    text-decoration: none;
+}
+
+.home__footer__ul li i{
+    color: var(--celeste);
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    font-weight: bold;
+}
